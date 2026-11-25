@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jai Narayan | Electrical Engineering Portfolio</title>
+  <meta name="description" content="Jai Narayan, Electrical Engineering student at Rice University. Embedded systems, PCB design, FPGA/Verilog, robotics and computer vision projects.">
+  <meta property="og:title" content="Jai Narayan | Electrical Engineering Portfolio">
+  <meta property="og:description" content="Embedded systems, PCB design, FPGA and robotics projects by Jai Narayan (Rice University ECE).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaifnarayan.github.io/">
+
+  <link rel="icon" href="./assets/images/avatar.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <main>
+
+    <!-- #SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar.svg" alt="Jai Narayan" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jai Narayan">Jai Narayan</h1>
+          <p class="title">Electrical Engineering @ Rice</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:jaifnarayan@gmail.com" class="contact-link">jaifnarayan@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="logo-linkedin"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">LinkedIn</p>
+              <a href="https://www.linkedin.com/in/jai-narayan-75096a339/" class="contact-link" target="_blank" rel="noopener">in/jai-narayan</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Education</p>
+              <p class="contact-text">B.S. Electrical Eng. '29</p>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Houston, Texas</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/JaiFNarayan" class="social-link" target="_blank" rel="noopener" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/jai-narayan-75096a339/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://devpost.com/jaifnarayan" class="social-link" target="_blank" rel="noopener" aria-label="Devpost"><ion-icon name="code-slash-outline"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="mailto:jaifnarayan@gmail.com" class="social-link" aria-label="Email"><ion-icon name="mail-outline"></ion-icon></a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!-- #main-content -->
+    <div class="main-content">
+
+      <!-- #NAVBAR -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link  active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Projects</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+
+      <!-- #ABOUT -->
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm an Electrical Engineering student at Rice University (Class of 2029) who likes building at the
+            line where hardware meets software: firmware, PCBs, digital logic, and robots that can see.
+          </p>
+          <p>
+            Right now I write ESP32 firmware and design custom PCBs for AR/VR haptic systems in Prof. Robert
+            LiKamWa's Experimental Pixels Lab, help characterize a high-frequency synthetic aperture radar in the
+            Everitt Lab, and design RF telemetry hardware for Rice Eclipse's high-altitude rockets. Before Rice, I
+            co-founded and co-captained my school's FIRST Tech Challenge team and took it to the World Championship.
+          </p>
+        </section>
+
+        <!-- service -->
+        <section class="service">
+
+          <h3 class="h3 service-title">What I work on</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="hardware-chip-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Embedded systems</h4>
+                <p class="service-item-text">ESP32 and Raspberry Pi firmware, Linux kernel drivers, sensors and closed-loop motor control.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="git-network-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">PCB &amp; RF design</h4>
+                <p class="service-item-text">KiCAD boards from 2-layer motor drivers to a 4-layer ~900&nbsp;MHz telemetry board, validated on the bench.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="code-working-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Digital logic &amp; FPGA</h4>
+                <p class="service-item-text">Verilog RTL, including a single-cycle 16-bit processor targeting a Xilinx Spartan-7.</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Robotics &amp; vision</h4>
+                <p class="service-item-text">OpenCV lane tracking, YOLO object detection, PD control and competition robotics.</p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- highlights -->
+        <section class="highlights">
+
+          <h3 class="h3 service-title">Highlights</h3>
+
+          <ul class="highlight-list">
+            <li class="highlight-item content-card">
+              <ion-icon name="ribbon-outline"></ion-icon>
+              <div>
+                <h4 class="h4">President's Honor Roll</h4>
+                <p>Rice University · 3.9 GPA</p>
+              </div>
+            </li>
+            <li class="highlight-item content-card">
+              <ion-icon name="sparkles-outline"></ion-icon>
+              <div>
+                <h4 class="h4">Workshop Spotlight Recipient</h4>
+                <p>Hook 'Em Hacks 2026</p>
+              </div>
+            </li>
+            <li class="highlight-item content-card">
+              <ion-icon name="medal-outline"></ion-icon>
+              <div>
+                <h4 class="h4">2× Bronze Medalist</h4>
+                <p>UIL Robotics Texas State Championship</p>
+              </div>
+            </li>
+            <li class="highlight-item content-card">
+              <ion-icon name="globe-outline"></ion-icon>
+              <div>
+                <h4 class="h4">FTC World Championship</h4>
+                <p>Co-founder &amp; co-captain, 2× Texas State qualifier</p>
+              </div>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rice University: B.S. Electrical Engineering</h4>
+              <span>2025 — 2029 (expected) · GPA 3.9 / 4.0</span>
+              <p class="timeline-text">
+                Coursework: Mobile &amp; Embedded Systems, Digital Logic Design, Physical Electronics I, Intro to Waves
+                &amp; Photonics, Algorithmic Thinking, Linear Algebra, Multivariable Calculus, Fundamentals of
+                Electrical Engineering I.
+              </p>
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="briefcase-outline"></ion-icon></div>
+            <h3 class="h3">Research &amp; Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Experimental Pixels Lab: Undergraduate Research Assistant</h4>
+              <span>Sep 2026 — Present</span>
+              <p class="timeline-text">
+                Develop ESP32 firmware for AR/VR haptic and fan systems under Prof. Robert LiKamWa, and design custom
+                PCBs that turn breadboard prototypes into integrated hardware. Validate circuits with an oscilloscope
+                and DMM to debug signals and verify power and performance.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Everitt Lab: Synthetic Aperture Radar</h4>
+              <span>Sep 2026 — Present</span>
+              <p class="timeline-text">
+                Characterizing a high-frequency synthetic aperture radar (sensitivity, range and cross-range
+                resolution) and developing adaptive and compressive sampling to reduce scan time.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rice Eclipse: Avionics R&amp;D</h4>
+              <span>Sep 2025 — Present</span>
+              <p class="timeline-text">
+                Designed a 4-layer ~900&nbsp;MHz RF telemetry PCB for high-altitude rocket flight data, integrating GPS,
+                regulated 3.3&nbsp;V power, ESD protection, LNAs and RF filtering for signal integrity and reliable
+                transmission.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Li Lab: Student Researcher</h4>
+              <span>Feb 2026 — May 2026</span>
+              <p class="timeline-text">
+                Built a linear position encoder system on NI data-acquisition hardware with a LabVIEW interface that
+                processes thousands of measurements per second for real-time displacement visualization and analysis.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rice Electric Vehicles: Power Systems</h4>
+              <span>Sep 2025 — May 2026</span>
+              <p class="timeline-text">
+                Designed, assembled and validated a 144&nbsp;V lithium-ion battery pack (38S9P) with three BMS units,
+                evaluating its thermal and electrical performance for high-power reliability.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Rice Wind Energy: Generator Team</h4>
+              <span>Sep 2025 — May 2026</span>
+              <p class="timeline-text">
+                Designed and prototyped a small-scale radial-flux wind generator, using CAD to optimize the stator and
+                housing and validating voltage, current and power output.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">FIRST Tech Challenge Robotics: Founding Member &amp; Co-Captain</h4>
+              <span>Aug 2021 — May 2025</span>
+              <p class="timeline-text">
+                Co-founded and led the FTC program, driving CAD-based design and fabrication to two Texas State
+                qualifications and a World Championship appearance.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="trophy-outline"></ion-icon></div>
+            <h3 class="h3">Awards</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">President's Honor Roll: Rice University</h4></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">Workshop Spotlight Recipient: Hook 'Em Hacks 2026</h4></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">2× Bronze Medalist: UIL Robotics Texas State Championship</h4></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">DECA State Finalist: Integrated Marketing Services</h4></li>
+            <li class="timeline-item"><h4 class="h4 timeline-item-title">2nd Place: Rice Annual LEGO Competition</h4></li>
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Skills</h3>
+
+          <div class="skills-card content-card">
+            <h5 class="h5 skills-group-title">Software &amp; tools</h5>
+            <ul class="chip-list">
+              <li>Python</li><li>C</li><li>C++</li><li>Verilog</li><li>Linux</li><li>Bash</li><li>MATLAB</li>
+              <li>LabVIEW</li><li>KiCAD</li><li>Fusion 360</li><li>Git / GitHub</li><li>LaTeX</li><li>OpenCV</li>
+            </ul>
+
+            <h5 class="h5 skills-group-title">Hardware &amp; electronics</h5>
+            <ul class="chip-list">
+              <li>PCB design</li><li>RF layout</li><li>ESP32</li><li>Raspberry Pi</li><li>Arduino</li>
+              <li>Embedded firmware</li><li>FPGA (Spartan-7)</li><li>DAQ integration</li><li>Battery systems / BMS</li>
+              <li>Oscilloscope &amp; DMM</li>
+            </ul>
+          </div>
+
+        </section>
+
+      </article>
+
+
+      <!-- #PROJECTS -->
+      <article class="portfolio" data-page="projects">
+
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Embedded &amp; Robotics</button></li>
+            <li class="filter-item"><button data-filter-btn>Hardware &amp; PCB</button></li>
+            <li class="filter-item"><button data-filter-btn>Software &amp; AI</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Embedded &amp; Robotics</button></li>
+              <li class="select-item"><button data-select-item>Hardware &amp; PCB</button></li>
+              <li class="select-item"><button data-select-item>Software &amp; AI</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <!-- Autonomous RC Car -->
+            <li class="project-item  active" data-filter-item data-category="embedded &amp; robotics">
+              <a href="https://www.hackster.io/team-10/team-10-s-epic-car-7f15dc" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/rc-car.svg" alt="Autonomous RC car lane-following illustration" loading="lazy">
+                </figure>
+                <h3 class="project-title">Autonomous RC Car</h3>
+                <p class="project-category">Raspberry Pi 5 · OpenCV</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">ELEC 424 (Mobile &amp; Embedded Systems) · Rice University · Team 10</p>
+                <h4 class="pm-h">Description</h4>
+                <p>An autonomous lane-keeping RC car that follows blue-tape lanes and stops at red stop zones, running entirely on a Linux Raspberry Pi 5. A webcam feeds an OpenCV lane-detection pipeline, one PD controller steers, and a second PD loop holds speed using feedback from an IR wheel encoder.</p>
+                <h4 class="pm-h">What I've done</h4>
+                <ul class="pm-bullets"><li>Built the real-time lane-tracking pipeline: blue-tape masking, edge detection and Hough lines, averaged and smoothed over time to get a stable heading.</li><li>Implemented PD steering control that converts the heading error into the servo's PWM signal.</li><li>Integrated the IR optical encoder (read through a custom Linux kernel driver) for speed feedback, and closed a second PD loop on the ESC throttle.</li><li>Added red stop-zone detection, and logged steering and speed data to CSV and plots to tune the control gains for stable runs.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>Raspberry Pi 5</li><li>Linux</li><li>Python</li><li>OpenCV</li><li>PD control</li><li>Kernel driver (C)</li><li>NumPy / Pandas</li></ul>
+                <h4 class="pm-h">Links</h4>
+                <div class="pm-links"><a class="pm-btn" href="https://www.hackster.io/team-10/team-10-s-epic-car-7f15dc" target="_blank" rel="noopener"><ion-icon name="document-text-outline"></ion-icon>Hackster write-up</a><a class="pm-btn" href="https://github.com/JaiFNarayan/Autonomous-RC-Car-ELEC-424-" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon>GitHub</a></div>
+              </template>
+            </li>
+
+            <!-- QuantRWA -->
+            <li class="project-item  active" data-filter-item data-category="software &amp; ai">
+              <a href="https://devpost.com/software/quantrwa" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/quantrwa.jpg" alt="QuantRWA logo" loading="lazy">
+                </figure>
+                <h3 class="project-title">QuantRWA</h3>
+                <p class="project-category">Hackathon · Next.js · Solana</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">Hook 'Em Hacks 2026 · built with Collin Chen</p>
+                <h4 class="pm-h">Description</h4>
+                <p>QuantRWA turns a photo of a high-value physical item (a watch, artwork or electronics) into a tradable on-chain asset. Gemini Vision appraises the item and scores its fraud risk. Assets that pass are minted as Solana SPL tokens split into 10,000 shares, and an AI trading layer manages a portfolio of those tokens alongside SOL and USDC. The hard problem was trust: proving that a photo shows a real, unique asset before anything is minted.</p>
+                <div class="pm-video"><iframe src="https://www.youtube-nocookie.com/embed/AVDLeIvMF40" title="QuantRWA demo video" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                <h4 class="pm-h">What we built</h4>
+                <ul class="pm-bullets"><li><strong>Security layer:</strong> an AWS Lambda enclave backed by Secrets Manager keeps the Solana vault key off the frontend, requires an HMAC signature for every mint, and rejects any asset with a risk score above 30.</li><li><strong>AI layer:</strong> Gemini Vision for multimodal appraisal and deepfake checks, plus agentic trading logic.</li><li><strong>App:</strong> a Next.js, Tailwind and Framer Motion dashboard on Vercel, with MongoDB Atlas for tick data and an audit trail of every action.</li><li>End to end, a photo is appraised, approved by AWS and returned as a signed mint record within seconds.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>TypeScript</li><li>Next.js</li><li>React</li><li>Solana / Metaplex</li><li>AWS Lambda</li><li>Gemini API</li><li>MongoDB</li></ul>
+                <h4 class="pm-h">Links</h4>
+                <div class="pm-links"><a class="pm-btn" href="https://devpost.com/software/quantrwa" target="_blank" rel="noopener"><ion-icon name="trophy-outline"></ion-icon>Devpost</a><a class="pm-btn" href="https://github.com/JaiFNarayan/QuantRWA-HookEmHack2026-" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon>GitHub</a><a class="pm-btn" href="https://www.youtube.com/watch?v=AVDLeIvMF40" target="_blank" rel="noopener"><ion-icon name="logo-youtube"></ion-icon>Demo video</a></div>
+              </template>
+            </li>
+
+            <!-- ML Rover -->
+            <li class="project-item  active" data-filter-item data-category="software &amp; ai">
+              <a href="https://github.com/JaiFNarayan/ML_Rover" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/ml-rover.jpg" alt="YOLO model detecting mallets in validation images" loading="lazy">
+                </figure>
+                <h3 class="project-title">Rover Tool Detection</h3>
+                <p class="project-category">YOLO · computer vision</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">Team project · University Rover Challenge-style tasks</p>
+                <h4 class="pm-h">Description</h4>
+                <p>A computer-vision pipeline that lets a rover find and identify specific tools in the field. A YOLOv8n model was fine-tuned for 200 epochs on labeled photos of a mallet in different lighting and backgrounds, reaching 0.995 mAP@50 (0.97 mAP@50-95) on the validation set. The model already runs locally; the next step is a Jetson Nano and TensorRT deployment for real-time inference on the rover.</p>
+                <img class="pm-img" src="./assets/images/ml-rover-results.jpg" alt="Training loss, precision, recall and mAP curves" loading="lazy">
+                <p class="pm-caption">Training curves over 200 epochs: box and class loss, precision, recall and mAP.</p>
+                <h4 class="pm-h">What we built</h4>
+                <ul class="pm-bullets"><li>Collected and labeled a custom image dataset, and set up the YOLO dataset config and train/validation split.</li><li>Wrote training and evaluation scripts with GPU/CPU selection and ONNX export.</li><li>Built a live webcam inference script that draws detections in real time.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>Python</li><li>Ultralytics YOLO</li><li>PyTorch</li><li>OpenCV</li><li>ONNX</li><li>Jetson Nano (planned)</li></ul>
+                <h4 class="pm-h">Links</h4>
+                <div class="pm-links"><a class="pm-btn" href="https://github.com/JaiFNarayan/ML_Rover" target="_blank" rel="noopener"><ion-icon name="logo-github"></ion-icon>GitHub</a></div>
+              </template>
+            </li>
+
+            <!-- Motor controller PCB -->
+            <li class="project-item  active" data-filter-item data-category="hardware &amp; pcb">
+              <a href="#projects" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/motor-pcb.svg" alt="Motor controller PCB illustration" loading="lazy">
+                </figure>
+                <h3 class="project-title">12V Motor Controller PCB</h3>
+                <p class="project-category">KiCAD · ESP32-C3 · DRV8871</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">Personal project · PCB design</p>
+                <h4 class="pm-h">Description</h4>
+                <p>A compact, manufacturable board for closed-loop control of a 12&nbsp;V geared motor. It combines the microcontroller, motor driver, power conversion and USB on one 2-layer PCB, ready to order from JLCPCB.</p>
+                <h4 class="pm-h">What I've done</h4>
+                <ul class="pm-bullets"><li>Designed the schematic and 2-layer layout in KiCAD to JLCPCB manufacturing rules.</li><li>Integrated an ESP32-C3 with native USB-C for programming and serial.</li><li>Added a DRV8871 H-bridge motor driver for bidirectional 12&nbsp;V motor control.</li><li>Designed the power stage: 12&nbsp;V battery or wall input with a 12&nbsp;V → 3.3&nbsp;V buck converter.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>KiCAD</li><li>ESP32-C3</li><li>DRV8871</li><li>Buck converter</li><li>USB-C</li><li>JLCPCB</li></ul>
+              </template>
+            </li>
+
+            <!-- 16-bit RISC -->
+            <li class="project-item  active" data-filter-item data-category="hardware &amp; pcb">
+              <a href="#projects" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/risc-cpu.svg" alt="Processor datapath block diagram" loading="lazy">
+                </figure>
+                <h3 class="project-title">16-Bit RISC Processor</h3>
+                <p class="project-category">Verilog · FPGA</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">In progress · digital design</p>
+                <h4 class="pm-h">Description</h4>
+                <p>A single-cycle 16-bit processor written from scratch in Verilog RTL, built around a custom instruction set architecture and targeting a Xilinx Spartan-7 FPGA.</p>
+                <h4 class="pm-h">What I've done</h4>
+                <ul class="pm-bullets"><li>Defined a custom 16-bit ISA.</li><li>Implemented the instruction decoder and program counter.</li><li>Built the ALU, with carry and borrow flags.</li><li>Built the branch unit and register file, and am wiring the datapath for deployment on the Spartan-7.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>Verilog</li><li>RTL design</li><li>Xilinx Spartan-7</li><li>Custom ISA</li></ul>
+              </template>
+            </li>
+
+            <!-- RF telemetry -->
+            <li class="project-item  active" data-filter-item data-category="hardware &amp; pcb">
+              <a href="#projects" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/rf-telemetry.svg" alt="RF telemetry board illustration" loading="lazy">
+                </figure>
+                <h3 class="project-title">Rocket RF Telemetry PCB</h3>
+                <p class="project-category">Rice Eclipse · ~900 MHz</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">Rice Eclipse · Avionics R&amp;D</p>
+                <h4 class="pm-h">Description</h4>
+                <p>A telemetry board that sends flight data down from Rice Eclipse's high-altitude rockets over a ~900&nbsp;MHz RF link. Flight hardware has to survive harsh conditions and keep a clean signal at range, so the design centers on signal integrity and robust power.</p>
+                <h4 class="pm-h">What I've done</h4>
+                <ul class="pm-bullets"><li>Designed a 4-layer ~900&nbsp;MHz RF telemetry PCB.</li><li>Integrated GPS and a regulated 3.3&nbsp;V power supply.</li><li>Added ESD protection, LNAs and RF filtering to improve signal integrity and transmission reliability.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>KiCAD</li><li>RF layout</li><li>4-layer stackup</li><li>GPS</li><li>LNA</li><li>ESD protection</li></ul>
+              </template>
+            </li>
+
+            <!-- Battery pack -->
+            <li class="project-item  active" data-filter-item data-category="hardware &amp; pcb">
+              <a href="#projects" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/battery-pack.svg" alt="Battery pack cell layout illustration" loading="lazy">
+                </figure>
+                <h3 class="project-title">144V EV Battery Pack</h3>
+                <p class="project-category">Rice Electric Vehicles · 38S9P</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">Rice Electric Vehicles · Power Systems team</p>
+                <h4 class="pm-h">Description</h4>
+                <p>The high-voltage traction pack for Rice Electric Vehicles: a 144&nbsp;V lithium-ion pack in a 38-series, 9-parallel configuration, monitored by three battery management systems.</p>
+                <h4 class="pm-h">What I've done</h4>
+                <ul class="pm-bullets"><li>Designed the 38S9P pack layout to reach 144&nbsp;V.</li><li>Assembled the pack and integrated three BMS units.</li><li>Validated it by evaluating thermal and electrical performance for high-power reliability.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>Li-ion cells</li><li>BMS</li><li>High-voltage systems</li><li>Thermal testing</li></ul>
+              </template>
+            </li>
+
+            <!-- Wind generator -->
+            <li class="project-item  active" data-filter-item data-category="hardware &amp; pcb">
+              <a href="#projects" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/wind-generator.svg" alt="Radial-flux generator illustration" loading="lazy">
+                </figure>
+                <h3 class="project-title">Radial-Flux Wind Generator</h3>
+                <p class="project-category">Rice Wind Energy · CAD</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">Rice Wind Energy · Generator team</p>
+                <h4 class="pm-h">Description</h4>
+                <p>A small-scale radial-flux generator for Rice Wind Energy's turbine, which converts the rotor's mechanical power into electrical output.</p>
+                <h4 class="pm-h">What I've done</h4>
+                <ul class="pm-bullets"><li>Designed and prototyped the radial-flux generator.</li><li>Used CAD to optimize the stator and housing.</li><li>Tested and validated the generator's voltage, current and power output.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>Fusion 360 / CAD</li><li>Electric machines</li><li>Prototyping</li><li>Power measurement</li></ul>
+              </template>
+            </li>
+
+            <!-- Linear encoder -->
+            <li class="project-item  active" data-filter-item data-category="embedded &amp; robotics">
+              <a href="#projects" data-project-link>
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/linear-encoder.svg" alt="Linear encoder and quadrature signal illustration" loading="lazy">
+                </figure>
+                <h3 class="project-title">Linear Position Encoder</h3>
+                <p class="project-category">Li Lab · NI DAQ · LabVIEW</p>
+              </a>
+              <template data-project-details>
+                <p class="pm-meta">Li Lab · Student researcher</p>
+                <h4 class="pm-h">Description</h4>
+                <p>A measurement system that tracks linear displacement in real time. An encoder is read through National Instruments data-acquisition hardware, and a LabVIEW interface processes and visualizes the data live.</p>
+                <h4 class="pm-h">What I've done</h4>
+                <ul class="pm-bullets"><li>Designed and implemented the linear position encoder system on NI DAQ hardware.</li><li>Developed a LabVIEW interface that processes thousands of measurements per second.</li><li>Enabled real-time displacement visualization and analysis for the lab.</li></ul>
+                <h4 class="pm-h">Tech</h4>
+                <ul class="chip-list"><li>LabVIEW</li><li>NI DAQ</li><li>Encoders</li><li>Real-time data</li></ul>
+              </template>
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!-- project modal -->
+        <div class="modal-container project-modal-container" data-project-modal>
+          <div class="overlay" data-project-overlay></div>
+          <section class="project-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+            <button class="modal-close-btn" data-project-close aria-label="Close"><ion-icon name="close-outline"></ion-icon></button>
+            <figure class="pm-hero"><img src="" alt="" data-pm-img></figure>
+            <h3 class="h3 pm-title" id="pm-title" data-pm-title></h3>
+            <div class="pm-body" data-pm-body></div>
+          </section>
+        </div>
+
+      </article>
+
+
+      <!-- #CONTACT -->
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-cards">
+          <a class="contact-card content-card" href="mailto:jaifnarayan@gmail.com">
+            <ion-icon name="mail-outline"></ion-icon><span>jaifnarayan@gmail.com</span>
+          </a>
+          <a class="contact-card content-card" href="https://www.linkedin.com/in/jai-narayan-75096a339/" target="_blank" rel="noopener">
+            <ion-icon name="logo-linkedin"></ion-icon><span>LinkedIn</span>
+          </a>
+          <a class="contact-card content-card" href="https://github.com/JaiFNarayan" target="_blank" rel="noopener">
+            <ion-icon name="logo-github"></ion-icon><span>GitHub</span>
+          </a>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Send me a message</h3>
+
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+            <textarea name="message" class="form-input" placeholder="Your message" required data-form-input></textarea>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+
+        </section>
+
+      </article>
+
+      <footer class="site-footer">
+        © 2026 Jai Narayan · Template: <a href="https://github.com/codewithsadee/vcard-personal-portfolio" target="_blank" rel="noopener">vCard</a> by codewithsadee (MIT)
+      </footer>
+
+    </div>
+
+  </main>
+
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
