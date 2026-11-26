@@ -480,19 +480,22 @@
               <a href="#projects" data-project-link>
                 <figure class="project-img">
                   <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/motor-pcb.svg" alt="Motor controller PCB illustration" loading="lazy">
+                  <img src="./assets/images/motor-3d.webp" alt="3D render of the SparBot motor controller PCB" loading="lazy">
                 </figure>
-                <h3 class="project-title">12V Motor Controller PCB</h3>
-                <p class="project-category">KiCAD · ESP32-C3 · DRV8871</p>
+                <h3 class="project-title">SparBot Motor Controller PCB</h3>
+                <p class="project-category">KiCad · ESP32-C3 · DRV8871</p>
               </a>
               <template data-project-details>
-                <p class="pm-meta">Personal project · PCB design</p>
+                <p class="pm-meta">Personal project · KiCad 10 · 2-layer, 70 × 40 mm</p>
                 <h4 class="pm-h">Description</h4>
-                <p>A compact, manufacturable board for closed-loop control of a 12&nbsp;V geared motor. It combines the microcontroller, motor driver, power conversion and USB on one 2-layer PCB, ready to order from JLCPCB.</p>
+                <p>SparBot is a compact controller board for a 12&nbsp;V geared motor. It takes power from a DC barrel jack or a battery terminal, steps it down for the logic, and drives the motor through an H-bridge under ESP32-C3 control. Two push-buttons and native USB-C make it easy to flash and test without extra hardware. The design is split into hierarchical Power, ESP32 and Motor Driver sheets, and the board is fully routed and laid out to JLCPCB rules.</p>
+                <ul class="pm-stats"><li><strong>173</strong><span>pads</span></li><li><strong>45</strong><span>vias</span></li><li><strong>52</strong><span>nets</span></li><li><strong>0</strong><span>unrouted</span></li></ul>
                 <h4 class="pm-h">What I've done</h4>
-                <ul class="pm-bullets"><li>Designed the schematic and 2-layer layout in KiCAD to JLCPCB manufacturing rules.</li><li>Integrated an ESP32-C3 with native USB-C for programming and serial.</li><li>Added a DRV8871 H-bridge motor driver for bidirectional 12&nbsp;V motor control.</li><li>Designed the power stage: 12&nbsp;V battery or wall input with a 12&nbsp;V → 3.3&nbsp;V buck converter.</li></ul>
+                <ul class="pm-bullets"><li><strong>Power:</strong> 12&nbsp;V input from a DC-005 barrel jack or battery terminal, with an SS34 Schottky diode for reverse protection, feeding a buck converter (4.7&nbsp;µH, 91k/30k feedback divider) that makes the 3.3&nbsp;V rail.</li><li><strong>Motor drive:</strong> a TI DRV8871 H-bridge driven from two ESP32 GPIOs, with its current limit set by a 30&nbsp;kΩ I<sub>LIM</sub> resistor and local 100&nbsp;nF + 22&nbsp;µF + 2.2&nbsp;µF decoupling on the 12&nbsp;V rail.</li><li><strong>MCU and USB:</strong> an ESP32-C3-MINI-1 module with USB-C (5.1&nbsp;kΩ CC pull-downs), USBLC6-2SC6 and PESD5V0 ESD protection, and an AP2112K-3.3 LDO so the board can also run from USB alone.</li><li><strong>Boot and reset:</strong> EN and IO9 buttons with RC debouncing (10&nbsp;kΩ / 100&nbsp;nF) for reliable flashing.</li><li><strong>Layout:</strong> placed and routed the 2-layer board with wide 12&nbsp;V and motor traces and a ground pour, and checked it in the 3D viewer.</li></ul>
+                <h4 class="pm-h">Screenshots</h4>
+                <div class="pm-gallery"><figure><a href="./assets/images/motor-layout.webp" target="_blank" rel="noopener"><img src="./assets/images/motor-layout.webp" alt="PCB layout: front and back copper" loading="lazy"></a><figcaption>PCB layout: front and back copper</figcaption></figure><figure><a href="./assets/images/motor-sch-esp32.webp" target="_blank" rel="noopener"><img src="./assets/images/motor-sch-esp32.webp" alt="Schematic: USB-C input, 3.3 V LDO, boot/reset and ESP32-C3" loading="lazy"></a><figcaption>Schematic: USB-C input, 3.3 V LDO, boot/reset and ESP32-C3</figcaption></figure><figure><a href="./assets/images/motor-sch-buck.webp" target="_blank" rel="noopener"><img src="./assets/images/motor-sch-buck.webp" alt="Schematic: 12 V → 3.3 V buck converter" loading="lazy"></a><figcaption>Schematic: 12 V → 3.3 V buck converter</figcaption></figure><figure><a href="./assets/images/motor-sch-driver.webp" target="_blank" rel="noopener"><img src="./assets/images/motor-sch-driver.webp" alt="Schematic: DRV8871 motor driver" loading="lazy"></a><figcaption>Schematic: DRV8871 motor driver</figcaption></figure></div>
                 <h4 class="pm-h">Tech</h4>
-                <ul class="chip-list"><li>KiCAD</li><li>ESP32-C3</li><li>DRV8871</li><li>Buck converter</li><li>USB-C</li><li>JLCPCB</li></ul>
+                <ul class="chip-list"><li>KiCad 10</li><li>ESP32-C3</li><li>DRV8871</li><li>Buck converter</li><li>USB-C</li><li>ESD protection</li><li>JLCPCB</li></ul>
               </template>
             </li>
 
@@ -522,19 +525,22 @@
               <a href="#projects" data-project-link>
                 <figure class="project-img">
                   <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/rf-telemetry.svg" alt="RF telemetry board illustration" loading="lazy">
+                  <img src="./assets/images/rf-3d.webp" alt="3D render of the RAVEN RF transponder PCB" loading="lazy">
                 </figure>
-                <h3 class="project-title">Rocket RF Telemetry PCB</h3>
-                <p class="project-category">Rice Eclipse · ~900 MHz</p>
+                <h3 class="project-title">RAVEN RF Transponder</h3>
+                <p class="project-category">Rice Eclipse · 4-layer · ~900 MHz</p>
               </a>
               <template data-project-details>
-                <p class="pm-meta">Rice Eclipse · Avionics R&amp;D</p>
+                <p class="pm-meta">Rice Eclipse · Avionics R&amp;D · RAVEN V1</p>
                 <h4 class="pm-h">Description</h4>
-                <p>A telemetry board that sends flight data down from Rice Eclipse's high-altitude rockets over a ~900&nbsp;MHz RF link. Flight hardware has to survive harsh conditions and keep a clean signal at range, so the design centers on signal integrity and robust power.</p>
+                <p>RAVEN is the telemetry transponder for Rice Eclipse's high-altitude rockets. It reads the flight sensors and GPS and sends the data to the ground over a ~900&nbsp;MHz link. The board is a 4-layer, 62.5&nbsp;mm circle with a 10.4&nbsp;mm center hole so it fits inside the airframe, and its signal chain is built for range and signal integrity in a harsh flight environment.</p>
+                <ul class="pm-stats"><li><strong>4</strong><span>copper layers</span></li><li><strong>62.5 mm</strong><span>round board</span></li><li><strong>98</strong><span>footprints</span></li><li><strong>~900 MHz</strong><span>RF link</span></li></ul>
                 <h4 class="pm-h">What I've done</h4>
-                <ul class="pm-bullets"><li>Designed a 4-layer ~900&nbsp;MHz RF telemetry PCB.</li><li>Integrated GPS and a regulated 3.3&nbsp;V power supply.</li><li>Added ESD protection, LNAs and RF filtering to improve signal integrity and transmission reliability.</li></ul>
+                <ul class="pm-bullets"><li><strong>RF chain:</strong> a TI CC1200 sub-GHz transceiver into a CC1190 front end (PA + LNA with separate TX/RX paths), a Murata LFD21868 filter and Anaren/Mini-Circuits couplers, out to SMA and U.FL connectors.</li><li><strong>Control:</strong> a Raspberry Pi RP2350 microcontroller with QSPI flash and a 12&nbsp;MHz crystal. Separate SPI chip-selects go to the RF IC, IMU, accelerometer, gyro, magnetometer, barometer and GPS, and an SDIO bus runs to storage.</li><li><strong>GPS:</strong> a u-blox NEO-M9N receiver for position telemetry.</li><li><strong>Power and protection:</strong> an LD1117 3.3&nbsp;V regulator with separately decoupled CC1200/CC1190 supplies, plus USB with USBLC6 and PESD ESD protection.</li><li><strong>Layout:</strong> a 4-layer stackup (F.Cu, In1, In2, B.Cu) with ground pours around the RF section, and a round outline that fits inside the rocket.</li></ul>
+                <h4 class="pm-h">Screenshots</h4>
+                <div class="pm-gallery"><figure><a href="./assets/images/rf-layout.webp" target="_blank" rel="noopener"><img src="./assets/images/rf-layout.webp" alt="PCB layout with ground pour and ratsnest" loading="lazy"></a><figcaption>PCB layout with ground pour and ratsnest</figcaption></figure></div>
                 <h4 class="pm-h">Tech</h4>
-                <ul class="chip-list"><li>KiCAD</li><li>RF layout</li><li>4-layer stackup</li><li>GPS</li><li>LNA</li><li>ESD protection</li></ul>
+                <ul class="chip-list"><li>KiCad 10</li><li>CC1200</li><li>CC1190</li><li>RP2350</li><li>u-blox NEO-M9N</li><li>4-layer RF layout</li><li>SPI / SDIO</li></ul>
               </template>
             </li>
 
@@ -549,13 +555,13 @@
                 <p class="project-category">Rice Electric Vehicles · 38S9P</p>
               </a>
               <template data-project-details>
-                <p class="pm-meta">Rice Electric Vehicles · Power Systems team</p>
+                <p class="pm-meta">Rice Electric Vehicles · Power Systems team · Sep 2025 – May 2026</p>
                 <h4 class="pm-h">Description</h4>
-                <p>The high-voltage traction pack for Rice Electric Vehicles: a 144&nbsp;V lithium-ion pack in a 38-series, 9-parallel configuration, monitored by three battery management systems.</p>
+                <p>The high-voltage traction pack for Rice Electric Vehicles: a 144&nbsp;V lithium-ion pack in a 38-series, 9-parallel configuration, managed by three battery management systems. Before building at full scale, I researched how to assemble packs safely, wrote a build guide for the team, and spot-welded a 12&nbsp;V demo pack to prove out the process.</p>
                 <h4 class="pm-h">What I've done</h4>
-                <ul class="pm-bullets"><li>Designed the 38S9P pack layout to reach 144&nbsp;V.</li><li>Assembled the pack and integrated three BMS units.</li><li>Validated it by evaluating thermal and electrical performance for high-power reliability.</li></ul>
+                <ul class="pm-bullets"><li><strong>Pack design:</strong> laid out the 38S9P arrangement to reach 144&nbsp;V, with three BMS units covering the series groups.</li><li><strong>Build guide:</strong> wrote the team's step-by-step guide, from arranging cells in holders and welding the parallel groups to adding series jumpers, wiring the balance leads, insulating and enclosing the pack.</li><li><strong>Spot welding:</strong> documented the welding process (pure nickel strip, not nickel-plated steel, 0.15–0.2&nbsp;mm thick; firm electrode pressure; about a 50&nbsp;ms pulse; several welds per joint, then a pull test and voltage check), then used it to spot-weld a 12&nbsp;V demo pack.</li><li><strong>BMS integration:</strong> explained how to choose a BMS by series count and maximum discharge current, and how to wire balance leads in order from B&minus; to B+ for each parallel group (worked through on a 4S3P example).</li><li><strong>Validation:</strong> assembled the full pack and evaluated its thermal and electrical performance for high-power reliability.</li></ul>
                 <h4 class="pm-h">Tech</h4>
-                <ul class="chip-list"><li>Li-ion cells</li><li>BMS</li><li>High-voltage systems</li><li>Thermal testing</li></ul>
+                <ul class="chip-list"><li>Li-ion cells</li><li>Spot welding</li><li>Nickel strip</li><li>BMS / balancing</li><li>High-voltage safety</li><li>Thermal testing</li></ul>
               </template>
             </li>
 
@@ -564,19 +570,21 @@
               <a href="#projects" data-project-link>
                 <figure class="project-img">
                   <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/wind-generator.svg" alt="Radial-flux generator illustration" loading="lazy">
+                  <img src="./assets/images/wind-assembly.webp" alt="Onshape assembly of the radial-flux wind generator" loading="lazy">
                 </figure>
                 <h3 class="project-title">Radial-Flux Wind Generator</h3>
-                <p class="project-category">Rice Wind Energy · CAD</p>
+                <p class="project-category">Rice Wind Energy · Onshape</p>
               </a>
               <template data-project-details>
-                <p class="pm-meta">Rice Wind Energy · Generator team</p>
+                <p class="pm-meta">Rice Wind Energy · Generator team · Sep 2025 – May 2026</p>
                 <h4 class="pm-h">Description</h4>
-                <p>A small-scale radial-flux generator for Rice Wind Energy's turbine, which converts the rotor's mechanical power into electrical output.</p>
+                <p>A small-scale radial-flux generator for Rice Wind Energy's turbine. Magnets on the rotor spin inside a ring of wound coils on a stator, and that converts the turbine's mechanical power into electrical output. The team designed it in Onshape as separate parts (coil holder, housing, side supports and stand) that are 3D-printed and brought together in a full assembly.</p>
                 <h4 class="pm-h">What I've done</h4>
-                <ul class="pm-bullets"><li>Designed and prototyped the radial-flux generator.</li><li>Used CAD to optimize the stator and housing.</li><li>Tested and validated the generator's voltage, current and power output.</li></ul>
+                <ul class="pm-bullets"><li><strong>CAD:</strong> designed and iterated parts in Onshape, using CAD to optimize the stator (coil holder) and the housing.</li><li><strong>Stator:</strong> the coil holder is a cylindrical core with radial teeth evenly spaced by a circular pattern, so the coils wind around each tooth with a consistent air gap to the rotor.</li><li><strong>Housing and mounting:</strong> a cylindrical shell that locates the stator, with a base and side supports that hold the shaft and mount to the stand.</li><li><strong>Prototyping and testing:</strong> built the prototype and validated its voltage, current and power output.</li></ul>
+                <h4 class="pm-h">Screenshots</h4>
+                <div class="pm-gallery"><figure><a href="./assets/images/wind-coil-holder.webp" target="_blank" rel="noopener"><img src="./assets/images/wind-coil-holder.webp" alt="Onshape: stator coil holder" loading="lazy"></a><figcaption>Onshape: stator coil holder</figcaption></figure><figure><a href="./assets/images/wind-housing.webp" target="_blank" rel="noopener"><img src="./assets/images/wind-housing.webp" alt="Onshape: generator housing and base" loading="lazy"></a><figcaption>Onshape: generator housing and base</figcaption></figure></div>
                 <h4 class="pm-h">Tech</h4>
-                <ul class="chip-list"><li>Fusion 360 / CAD</li><li>Electric machines</li><li>Prototyping</li><li>Power measurement</li></ul>
+                <ul class="chip-list"><li>Onshape</li><li>3D printing</li><li>Electric machines</li><li>Prototyping</li><li>Power measurement</li></ul>
               </template>
             </li>
 
@@ -585,19 +593,21 @@
               <a href="#projects" data-project-link>
                 <figure class="project-img">
                   <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
-                  <img src="./assets/images/linear-encoder.svg" alt="Linear encoder and quadrature signal illustration" loading="lazy">
+                  <img src="./assets/images/encoder.webp" alt="Arduino UNO wired to the linear position encoder" loading="lazy">
                 </figure>
                 <h3 class="project-title">Linear Position Encoder</h3>
-                <p class="project-category">Li Lab · NI DAQ · LabVIEW</p>
+                <p class="project-category">Li Lab · Arduino · LabVIEW</p>
               </a>
               <template data-project-details>
-                <p class="pm-meta">Li Lab · Student researcher</p>
+                <p class="pm-meta">Li Lab · Student researcher, with Angel Castellon · Feb – May 2026</p>
                 <h4 class="pm-h">Description</h4>
-                <p>A measurement system that tracks linear displacement in real time. An encoder is read through National Instruments data-acquisition hardware, and a LabVIEW interface processes and visualizes the data live.</p>
+                <p>The goal was a LabVIEW-based system for reading a position encoder in real time, as the first step toward running it through an NI PCIe-6321 data-acquisition card. After proving the encoder worked on its own, we built a working encoder-to-LabVIEW pipeline. We then started on the DAQ hardware and on stepper motor control for the larger experiment.</p>
                 <h4 class="pm-h">What I've done</h4>
-                <ul class="pm-bullets"><li>Designed and implemented the linear position encoder system on NI DAQ hardware.</li><li>Developed a LabVIEW interface that processes thousands of measurements per second.</li><li>Enabled real-time displacement visualization and analysis for the lab.</li></ul>
+                <ul class="pm-bullets"><li><strong>Interrupt-driven decoding:</strong> wrote Arduino UNO firmware with <code>INPUT_PULLUP</code> on both channels (A and B) and <code>attachInterrupt</code> on each. A state-transition decoder increments or decrements a global position depending on direction.</li><li><strong>LabVIEW interface:</strong> streamed the position over serial (VISA) into a LabVIEW VI that parses the buffer and plots displacement live on a waveform chart.</li><li><strong>NI DAQ bring-up:</strong> set up a pulse loopback test on the NI PCIe-6321, generating a pulse and wiring the output back to an input to confirm the system could both output and read pulse signals. I'm currently debugging the wiring and pin mapping.</li><li><strong>Stepper motor control:</strong> worked out how to drive a stepper with an L298N H-bridge (external supply, shared ground) so the encoder can measure controlled motion.</li></ul>
+                <h4 class="pm-h">Screenshots</h4>
+                <div class="pm-gallery"><figure><a href="./assets/images/encoder-demo.webp" target="_blank" rel="noopener"><img src="./assets/images/encoder-demo.webp" alt="Live demo: moving the encoder updates the LabVIEW chart" loading="lazy"></a><figcaption>Live demo: moving the encoder updates the LabVIEW chart</figcaption></figure><figure><a href="./assets/images/encoder-labview.webp" target="_blank" rel="noopener"><img src="./assets/images/encoder-labview.webp" alt="LabVIEW block diagram: VISA read → parse → waveform chart" loading="lazy"></a><figcaption>LabVIEW block diagram: VISA read → parse → waveform chart</figcaption></figure><figure><a href="./assets/images/encoder-code.webp" target="_blank" rel="noopener"><img src="./assets/images/encoder-code.webp" alt="Arduino interrupt-based encoder decoder" loading="lazy"></a><figcaption>Arduino interrupt-based encoder decoder</figcaption></figure></div>
                 <h4 class="pm-h">Tech</h4>
-                <ul class="chip-list"><li>LabVIEW</li><li>NI DAQ</li><li>Encoders</li><li>Real-time data</li></ul>
+                <ul class="chip-list"><li>LabVIEW</li><li>NI PCIe-6321</li><li>Arduino</li><li>C++</li><li>Quadrature encoders</li><li>Interrupts</li><li>L298N</li></ul>
               </template>
             </li>
 
